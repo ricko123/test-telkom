@@ -1,0 +1,148 @@
+.header{
+    text-align: center;
+    padding: 10px;
+}
+.card-form{
+    .card-text{
+        color:#707070;
+    }
+}
+.box-select{
+    @include bordered(#C5D0CE, 1px);
+    @include border-rad(4px);
+    padding: 10px 15px 10px 20px;
+    display: flex;
+    align-items: center;
+    .select-option{
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #787878 !important;
+        display: inline-block;
+        font-size: 16px !important;
+        border: none !important;
+        padding-left: 0 !important;
+        appearance: none;
+        background: url('~@/assets/img/arrow-down-gray.svg')  no-repeat right 0.1rem center/11px 10px !important;
+        &:focus-visible{
+            outline: none;
+            background: transparent;
+        }
+        .dropdown.icon{
+            display: none;
+        }
+        &.active{
+            box-shadow: none !important;
+            &:hover{
+                box-shadow: none !important; 
+            }
+        }
+        .default.text{
+            color: #787878 !important;
+        }
+    }
+    &.active{
+        @include bordered(#106455, 1px);
+    }
+}
+.noimg{
+    img{
+        width: 95px;
+        height: 83px;
+        object-fit: contain;
+    }
+}
+.ml-3{
+    margin-left: 1.3rem;
+}
+.date-picker{
+    .btn {
+        &#date-picker-to, &#date-picker-from{
+            background: url('~@/assets/img/icon-date.svg') no-repeat right 0.5rem center/13px 23px;
+            width: 38px;
+            padding: 7px;
+            .b-icon.bi{
+                display: none;
+            }
+        }
+    }
+}
+.btn-custom{
+    text-align: left;
+    color: #0947d8 !important;
+}
+.txt-input{
+    @include bordered(#C5D0CE, 1px);
+    @include border-rad(4px);
+    padding: 11px 11px 11px 46px;
+    font-family: 'Roboto', sans-serif;
+    border-color: #C5D0CE !important;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+.skill-box{
+    padding: 7px;
+    background-color: #e1e1e1;
+    color: #524e4e;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+// telkom test
+.box-group{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    .box{
+        width: 20%;
+        position: absolute;
+        &.red{
+            background-color: #FF0100;
+            left: 0;
+            top:20%;
+            bottom: 0;
+            z-index: 9;
+        }
+        &.blue{
+            background-color: #01B0F0;
+            width: 100%;
+            height: 20%;
+            left: 0;
+            top:0;
+            right: 0;
+            z-index: 5;
+        }
+        &.yellow{
+            background-color: #FFFF01;
+            right: 0;
+            top:0;
+            bottom: 0;
+            z-index: 6;
+        }
+        &.green{
+            width: 100%;
+            height: 20%;
+            background-color: #92D050;
+            right: 0;
+            bottom: 0;
+            z-index: 7;
+        }
+    }
+}
+.menu{
+    li{
+        display: inline-block;
+        padding: 15px;
+    }
+}
+.tableProduct{
+    border: 1px solid #787878;
+    tr{
+        th,td{
+            border: 1px solid #787878;
+            padding: 5px;
+        }
+    }
+}

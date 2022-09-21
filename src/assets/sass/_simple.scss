@@ -1,0 +1,38 @@
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+@mixin bordered-dashed($color, $width) {
+    border: $width dashed $color;
+}
+
+@mixin bordered-left($color, $width) {
+    border-left: $width solid $color;
+}
+
+@mixin bordered-right($color, $width) {
+    border-right: $width solid $color;
+}
+
+@mixin bordered-bottom($color, $width) {
+    border-bottom: $width solid $color;
+}
+@mixin bordered-top($color, $width) {
+    border-top: $width solid $color;
+}
+
+@mixin border-rad($value){
+    border-radius: $value;
+    -moz-border-radius:$value;
+    -o-border-radius:$value;
+    -webkit-border-radius:$value;
+}
+
+@mixin boxshadow($shadow){
+    -webkit-box-shadow:$shadow ;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+.collapsed > .when-opened,
+    :not(.collapsed) > .when-closed {
+        display: none;
+    }
